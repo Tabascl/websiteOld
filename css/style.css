@@ -34,9 +34,28 @@ h1 {
 }
 
 .card {
+    float: left;
     padding: 40px 0 30px 20px;
-    overflow: auto;
     position: relative;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: none;
+    border-top: none;
+    border-left: 2px solid lightgrey;
+    border-bottom: none;
+    border-right: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 40px 50px;
 }
 
 .info {
@@ -95,4 +114,18 @@ strong {
     top: 0px;
     left: 0px;
     height: 100%;
+}
+
+.dyntext {
+    animation: fade 0.2s;
+    clear: both;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

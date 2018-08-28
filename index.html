@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/changeContent.js"></script>
 </head>
 
 <body>
     <img class="background" src="img/dom.jpg" alt="A picture of the curch in Regensburg, with a boat in the foreground." />
     <section>
+        <div class=buttons>
+            <button onclick="toggleSite('home')">Home</button>
+            <button onclick="toggleSite('projects')">Projects</button>
+        </div>
         <div class=card>
             <img class=avatar src="img/self.jpg" alt="A picture of me" style="width:150px;height:150px;">
             <div class=info>
@@ -27,7 +32,7 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <div id="home" class="dyntext">
             <p>
                 <strong>Hi!</strong> I'm Simon. I graduated from OTH Regensburg with a bachelor's degree in Technische Informatik
                 in 2018. Currently I'm still a working student at Continental.
@@ -35,9 +40,9 @@
             <p>
                 I live in the beautiful city of Regensburg in Bavaria, Germany.
             </p>
-            <p>
-                I will add more content to this website soon, please be patient!
-            </p>
+        </div>
+        <div id="projects" class="dyntext" style="display: none;">
+            <p><strong>This</strong> page will at one point contain all the projects I work or have worked on in my free time.</p>
         </div>
     </section>
 </body>
