@@ -30,7 +30,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 24pt;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
 }
 
 .card {
@@ -81,7 +81,7 @@ a, a:link, a:visited {
 .social {
     height: 50px;
     width: 50px;
-    padding: 0 5px;
+    padding: 5px 5px;
     outline: none;
     text-decoration: none;
 }
