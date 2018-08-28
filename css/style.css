@@ -1,0 +1,96 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    font-size: 18px;
+    margin: 0px;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a img {
+    transform: translate(0px, 0px);
+    transition: transform 0.2s;    
+}
+
+ul li a:hover img {
+    transform: translate(0px, -5px);
+    transition: transform 0.2s;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 24pt;
+    margin: 0 0 20px 0;
+}
+
+.card {
+    padding: 20px;
+    overflow: auto;
+    position: relative;
+}
+
+.info {
+    padding: 0 0 0 170px;
+}
+
+section {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 10px 0px black;
+    background-image: linear-gradient(to right, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
+}
+
+section div {
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+a, a:link, a:visited {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.avatar {
+    float: left;
+    box-shadow: 0 0 20px -5px black;
+    border: 1px solid cornsilk;
+    border-radius: 200px
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.social {
+    height: 50px;
+    width: 50px;
+    padding: 0 5px;
+    outline: none;
+    text-decoration: none;
+}
+
+strong {
+    color: chocolate;
+}
+
+.background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}

@@ -1,0 +1,10 @@
+@media (max-width: 900px) {
+    img.background {
+        display: none;
+    }
+    section {
+        position: static;
+        width: 100%;
+        height: 100%;
+    }
+}
