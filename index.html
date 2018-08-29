@@ -6,16 +6,13 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script/changeContent.js"></script>
 </head>
 
 <body>
     <img class="background" src="img/dom.jpg" alt="A picture of the curch in Regensburg, with a boat in the foreground." />
     <section>
-        <div class=buttons>
-            <button onclick="toggleSite('home')">Home</button>
-            <button onclick="toggleSite('projects')">Projects</button>
-        </div>
         <div class=card>
             <img class=avatar src="img/self.jpg" alt="A picture of me" style="width:150px;height:150px;">
             <div class=info>
@@ -31,6 +28,10 @@
                             <img class=social src="img/gmail.png" alt="Email Icon"></a></li>
                 </ul>
             </div>
+            <div class=buttons>
+                <a href="#" id=homebutton class=navbutton>Home</a>
+                <a href="#projects" id=projectsbutton class=navbutton>Projects</a>
+            </div>
         </div>
         <div id="home" class="dyntext">
             <p>
@@ -42,7 +43,8 @@
             </p>
         </div>
         <div id="projects" class="dyntext" style="display: none;">
-            <p><strong>This</strong> page will at one point contain all the projects I work or have worked on in my free time.</p>
+            <p><strong>This</strong> page will at one point contain all the projects I work or have worked on in my free
+                time.</p>
         </div>
     </section>
 </body>

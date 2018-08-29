@@ -39,10 +39,11 @@ h1 {
     position: relative;
 }
 
-button {
+.navbutton {
     font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-decoration: none;
     font-size: 18px;
-    background-color: none;
     border-top: none;
     border-left: 2px solid lightgrey;
     border-bottom: none;
@@ -76,11 +77,6 @@ section {
 section div {
     padding: 0 20px;
     font-weight: 400;
-}
-
-a, a:link, a:visited {
-    color: dodgerblue;
-    text-decoration: none;
 }
 
 .avatar {
