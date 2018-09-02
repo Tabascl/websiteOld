@@ -39,7 +39,25 @@ h1 {
     position: relative;
 }
 
-.navbutton {
+nav {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 40px 50px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     color: black;
     text-decoration: none;
@@ -52,11 +70,24 @@ h1 {
     cursor: pointer;
 }
 
-.buttons {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    padding: 40px 50px;
+nav ul li a:after {
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    margin: 0;
+    opacity: 1;
+    color: transparent;
+    background: lightgrey;
+    height: 100%;
+    width: 0%;
+    transition: all 0.5s;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
 }
 
 .info {
