@@ -4,9 +4,12 @@
     <title>Simon</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="packages/highlight/styles/default.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="packages/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <script src="script/changeContent.js"></script>
 </head>
 
@@ -47,6 +50,14 @@
         <div id="projects" class="dyntext" style="display: none;">
             <p><strong>This</strong> page will at one point contain all the projects I work or have worked on in my free
                 time.</p>
+            <p>This is a test for including code with syntax highlighting on the website:</p>
+            <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!";
+    return 0;
+}</code></pre>
         </div>
     </section>
 </body>
