@@ -8,6 +8,7 @@
         height: 100%;
     }
     nav {
-        padding: 5px 0px;
+        padding: 5px 0px 2px 0px;
+        width: 100%;
     }
 }
