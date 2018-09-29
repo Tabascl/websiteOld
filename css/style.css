@@ -35,8 +35,7 @@ h1 {
 }
 
 .card {
-    float: left;
-    padding: 60px 0 30px 20px;
+    padding: 60px 0 0 20px;
     position: relative;
 }
 
@@ -102,7 +101,10 @@ nav ul li a:hover:after {
 }
 
 .info {
+	display: block;
+	vertical-align: top;
     padding: 0 0 0 170px;
+	height: 152px;
 }
 
 section {
@@ -111,7 +113,7 @@ section {
     top: 0;
     width: 50%;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
     box-shadow: 0 0 10px 0px black;
     background-image: linear-gradient(to right, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
 }
@@ -122,7 +124,7 @@ section div {
 }
 
 .avatar {
-    float: left;
+	float: left;
     box-shadow: 0 0 20px -5px black;
     border: 1px solid cornsilk;
     border-radius: 200px;
@@ -138,7 +140,6 @@ section div {
 .social {
     height: 50px;
     width: 50px;
-    padding: 5px 5px;
     outline: none;
     text-decoration: none;
 }
@@ -155,8 +156,8 @@ strong {
 }
 
 .dyntext {
-    animation: fade 0.2s;
-    clear: both;
+    /*animation: fade 0.2s;
+    clear: both;*/
 }
 
 @keyframes fade {
