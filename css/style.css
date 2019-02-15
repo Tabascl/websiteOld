@@ -159,11 +159,6 @@ strong {
     height: 100%;
 }
 
-.dyntext {
-    /*animation: fade 0.2s;
-    clear: both;*/
-}
-
 @keyframes fade {
     0% {
         opacity: 0;
