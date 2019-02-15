@@ -37,6 +37,7 @@ h1 {
 .card {
     padding: 60px 0 0 20px;
     position: relative;
+	overflow: hidden;
 }
 
 nav {
@@ -103,8 +104,9 @@ nav ul li a:hover:after {
 .info {
 	display: block;
 	vertical-align: top;
-    padding: 0 0 0 170px;
+	float: left;
 	height: 152px;
+	padding-left: 0px;
 }
 
 section {
@@ -130,6 +132,8 @@ section div {
     border-radius: 200px;
     transform: scale(1);
     transition: transform 0.2s;
+	margin-bottom: 20px;
+	margin-right: 20px;
 }
 
 .avatar:hover {
